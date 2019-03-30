@@ -14,7 +14,7 @@ class PlayItem extends Component {
                 <video
                     id="video"
                     width="225"
-                    poster="../../shaka-player-logo.png"
+                    poster="/public/images/movie.jpg"
                     controls autoplay>
                 </video>
                 <div className="video-info">
