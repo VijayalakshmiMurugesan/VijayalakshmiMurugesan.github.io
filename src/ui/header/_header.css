@@ -1,0 +1,50 @@
+.header {
+    background-color: #333;
+    display: flex;
+    height: 70px;
+}
+
+.header .leftcont {
+    padding-left: 155px;
+    padding-top: 20px;
+    text-align: left;
+    width: 70%;
+}
+
+.header .leftcont .title {
+    background: linear-gradient(#0000ff, #6666ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.header .leftcont .bars-icon {
+    color: #fff;
+    margin-right: 23px;
+}
+
+.header .rightcont {
+    padding-right: 50px;
+    padding-top: 20px;
+    text-align: right;
+    width: 30%;
+}
+
+.header .rightcont .search-icon {
+    color: #fff;
+    margin-right: 30px;
+}
+
+.header .rightcont .notification-icon {
+    color: #fff;
+    margin-right: 18px;
+}
+
+.header .rightcont .globe-icon {
+    color: #fff;
+}
+
+.header .rightcont .down-icon {
+    color: #fff;
+}

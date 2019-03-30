@@ -1,0 +1,29 @@
+.footer-item {
+    background-color: #000;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    height: 25px;
+    margin-right: 12px;
+    padding: 2px 7px 2px 7px;
+    width: 90px;
+}
+
+.footer-item .leftcont {
+    text-align: left;
+    width: 30px;
+}
+
+.footer-item .rightcont {
+    float: right;
+    text-align: left;
+    width: 60px;
+}
+
+.footer-item .rightcont .subtitle{
+    font-size: 7px;
+}
+
+.footer-item .rightcont .title{
+    font-size: 11px;
+}

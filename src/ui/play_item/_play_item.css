@@ -1,0 +1,45 @@
+.play-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-right: 5px;
+}
+
+.play-item .video-item {
+    border: 1px solid #aaa;
+    float: left;
+    height: 125px;
+    width: 225px;
+}
+
+.play-item .video-info {
+    float: left;
+    margin-top: 12px;
+    text-align: left;
+    width: 225px;
+}
+
+.play-item .video-info .desc {
+    font-weight: bold;
+    height: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.play-item .video-info .info {
+    color: #808080;
+    font-size: 15px;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+.play-item .video-info .info .view .view-count{
+    margin-right: 5px;
+}
+
+.play-item .video-info .info .title .tick-icon {
+    background: #333;
+    border-radius: 50%;
+    color: #fff;
+    padding: 5px 7px 5px 7px;
+}
