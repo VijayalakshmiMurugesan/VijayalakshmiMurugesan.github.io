@@ -24,7 +24,7 @@ class PageTube extends Component {
                             noViews: 3,
                             lastSeen: new Date(),
                             imageUrl: 'https://homepages.cae.wisc.edu/~ece533/images/baboon.png',
-                            videoUrl: 'http://dash.akamaized.net/dash264/TestCases/2c/qualcomm/2/MultiRes.mpd'
+                            videoUrl: 'https://dash.akamaized.net/dash264/TestCases/2c/qualcomm/2/MultiRes.mpd'
                         },
                         {
                             title: 'Movie title 2',
@@ -32,7 +32,7 @@ class PageTube extends Component {
                             noViews: 3,
                             lastSeen: new Date(),
                             imageUrl: 'https://homepages.cae.wisc.edu/~ece533/images/airplane.png',
-                            videoUrl: 'http://dash.akamaized.net/dash264/TestCasesIOP41/MultiTrack/associative_content/1/manifest_associated_content_live.mpd'
+                            videoUrl: 'https://dash.akamaized.net/dash264/TestCasesIOP41/MultiTrack/associative_content/1/manifest_associated_content_live.mpd'
                         },
                     ]
                 }
