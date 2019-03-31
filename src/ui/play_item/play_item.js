@@ -7,33 +7,41 @@ import './_play_item.css';
 
 class PlayItem extends Component {
     render() {
-        const { description, title, views, lastseen } = this.props;
+        const { description, title, noViews, lastSeen, imageUrl } = this.props;
 
         return (
             <div className="play-item">
-                <video
-                    id="video"
-                    width="225"
-                    poster="/public/images/movie.jpg"
-                    controls autoplay>
-                </video>
-                <div className="video-info">
-                    <div className="desc">
-                        {description}
+                <div className="headerinfo" onClick={this._onPlay}>
+                    <div className="image">
+                        <img src={imageUrl} alt="" />
                     </div>
-                    <div className="info">
-                        <div className="title">
-                            <span>{title}</span>
-                        </div>
-                        <div className="view">
-                            <span className="view-count">{views}</span>
-                            <span></span>
-                            <span>{lastseen}</span>
-                        </div>
+                </div>
+                <div className="continfo">
+                    <div className="title">
+                        <span>{title}</span>
+                    </div>
+                    <div className="view">
+                        <span className="view-count">{noViews}</span>
+                        <span></span>
+                        <span>{this._formatDate(lastSeen)}</span>
                     </div>
                 </div>
             </div>
         );
+    }
+
+    /* Event Handlers */
+    _onPlay = () => {
+        const { videoUrl, onPlay } = this.props;
+
+        if (onPlay) {
+            onPlay(videoUrl);
+        }
+    }
+
+    /* Private functions */
+    _formatDate = (date) => {
+        return date.toString();
     }
 }
 
