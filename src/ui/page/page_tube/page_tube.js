@@ -40,7 +40,7 @@ class PageTube extends Component {
                             noViews: 3,
                             lastSeen: new Date(2017, 0, 14),
                             imageUrl: 'https://homepages.cae.wisc.edu/~ece533/images/peppers.png',
-                            videoUrl: 'http://dash.akamaized.net/dash264/TestCases/2c/qualcomm/1/MultiResMPEG2.mpd'
+                            videoUrl: 'https://dash.akamaized.net/dash264/TestCases/2c/qualcomm/1/MultiResMPEG2.mpd'
                         },
                         {
                             title: 'Vanakkam Chennai - Un kaigal korthu HD',
@@ -48,7 +48,7 @@ class PageTube extends Component {
                             noViews: 3,
                             lastSeen: new Date(2019, 2, 5),
                             imageUrl: 'https://homepages.cae.wisc.edu/~ece533/images/tulips.png',
-                            videoUrl: 'http://dash.akamaized.net/dash264/TestCasesIOP33/multiplePeriods/4/manifest_multiple_Periods_Different_SegmentDuration.mpd'
+                            videoUrl: 'https://dash.akamaized.net/dash264/TestCasesIOP33/multiplePeriods/4/manifest_multiple_Periods_Different_SegmentDuration.mpd'
                         },
                         {
                             title: 'Kayal - Unna ippo pakkanum - Video song',
@@ -56,7 +56,7 @@ class PageTube extends Component {
                             noViews: 3,
                             lastSeen: new Date(2017, 0, 14),
                             imageUrl: 'https://homepages.cae.wisc.edu/~ece533/images/peppers.png',
-                            videoUrl: 'http://dash.akamaized.net/dash264/TestCases/2c/qualcomm/1/MultiResMPEG2.mpd'
+                            videoUrl: 'https://dash.akamaized.net/dash264/TestCases/2c/qualcomm/1/MultiResMPEG2.mpd'
                         },
                     ]
                 },
