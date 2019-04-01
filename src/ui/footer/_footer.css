@@ -58,3 +58,7 @@
     display: flex;
     flex: 1;
 }
+
+.footer .bottomcont .right span {
+    margin-right: 15px;
+}
