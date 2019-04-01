@@ -1,6 +1,6 @@
 // PageTube Component
 import React, { Component } from 'react';
-import { FaMusic } from 'react-icons/fa';
+import { FaMusic, FaFilm } from 'react-icons/fa';
 import shaka from 'shaka-player';
 
 import './_page_tube.css'; 
@@ -15,22 +15,68 @@ class PageTube extends Component {
         this.state = {
             categories: [
                 {
-                    icon: FaMusic,
+                    icon: <FaMusic />,
                     title: 'Music',
                     items: [
                         {
-                            title: 'Movie title',
+                            title: 'Zayin - There you are - HD Video',
                             description: 'Movie description',
                             noViews: 3,
-                            lastSeen: new Date(),
-                            imageUrl: 'https://homepages.cae.wisc.edu/~ece533/images/baboon.png',
+                            lastSeen: new Date(2019, 2, 26),
+                            imageUrl: 'https://homepages.cae.wisc.edu/~ece533/images/girl.png',
                             videoUrl: 'https://dash.akamaized.net/dash264/TestCases/2c/qualcomm/2/MultiRes.mpd'
                         },
                         {
-                            title: 'Movie title 2',
+                            title: 'Good work never fails - Song 1',
                             description: 'Movie description 2',
                             noViews: 3,
-                            lastSeen: new Date(),
+                            lastSeen: new Date(2019, 0, 14),
+                            imageUrl: 'https://homepages.cae.wisc.edu/~ece533/images/airplane.png',
+                            videoUrl: 'https://dash.akamaized.net/dash264/TestCasesIOP41/MultiTrack/associative_content/1/manifest_associated_content_live.mpd'
+                        },
+                        {
+                            title: 'Kayal - Unna ippo pakkanum - Video song',
+                            description: 'Movie description 2',
+                            noViews: 3,
+                            lastSeen: new Date(2017, 0, 14),
+                            imageUrl: 'https://homepages.cae.wisc.edu/~ece533/images/peppers.png',
+                            videoUrl: 'http://dash.akamaized.net/dash264/TestCases/2c/qualcomm/1/MultiResMPEG2.mpd'
+                        },
+                        {
+                            title: 'Vanakkam Chennai - Un kaigal korthu HD',
+                            description: 'Movie description 2',
+                            noViews: 3,
+                            lastSeen: new Date(2019, 2, 5),
+                            imageUrl: 'https://homepages.cae.wisc.edu/~ece533/images/tulips.png',
+                            videoUrl: 'http://dash.akamaized.net/dash264/TestCasesIOP33/multiplePeriods/4/manifest_multiple_Periods_Different_SegmentDuration.mpd'
+                        },
+                        {
+                            title: 'Kayal - Unna ippo pakkanum - Video song',
+                            description: 'Movie description 2',
+                            noViews: 3,
+                            lastSeen: new Date(2017, 0, 14),
+                            imageUrl: 'https://homepages.cae.wisc.edu/~ece533/images/peppers.png',
+                            videoUrl: 'http://dash.akamaized.net/dash264/TestCases/2c/qualcomm/1/MultiResMPEG2.mpd'
+                        },
+                    ]
+                },
+                {
+                    icon: <FaFilm />,
+                    title: 'Trailers',
+                    items: [
+                        {
+                            title: 'Avengers - Official trailer',
+                            description: 'Movie description',
+                            noViews: 3,
+                            lastSeen: new Date(2019, 2, 26),
+                            imageUrl: 'https://homepages.cae.wisc.edu/~ece533/images/girl.png',
+                            videoUrl: 'https://dash.akamaized.net/dash264/TestCases/2c/qualcomm/2/MultiRes.mpd'
+                        },
+                        {
+                            title: 'Petta - Official trailer',
+                            description: 'Movie description 2',
+                            noViews: 3,
+                            lastSeen: new Date(2019, 0, 14),
                             imageUrl: 'https://homepages.cae.wisc.edu/~ece533/images/airplane.png',
                             videoUrl: 'https://dash.akamaized.net/dash264/TestCasesIOP41/MultiTrack/associative_content/1/manifest_associated_content_live.mpd'
                         },
@@ -69,6 +115,7 @@ class PageTube extends Component {
                                         lastSeen={item.lastSeen}
                                         imageUrl={item.imageUrl}
                                         videoUrl={item.videoUrl}
+                                        noViews={item.noViews}
                                         onPlay={this._onPlayVideo}
                                     />
                                 )}

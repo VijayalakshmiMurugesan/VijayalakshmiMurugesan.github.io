@@ -13,9 +13,6 @@ class App extends Component {
         <PageTube
           type="Latest Music Videos"
         />
-        <PageTube
-          type="Latest Music Videos"
-        />
         <Footer />
       </div>
     );

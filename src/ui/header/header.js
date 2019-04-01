@@ -11,7 +11,7 @@ class Header extends Component {
             <div className="header">
                 <div className="leftcont">
                     <span className="bars-icon"><FaBars /></span>
-                    <span><img src="../../../public/images/logo.png" /></span>
+                    <span><img src="../../../public/images/logo.png" alt=""/></span>
                     <span className="title">LOGO</span>
                 </div>
                 <div className="rightcont">
