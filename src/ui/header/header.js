@@ -1,7 +1,7 @@
 // Header Component
 
 import React, { Component } from 'react';
-import { FaBars, FaSearch, FaBell, FaGlobe, FaAngleDown } from '../../../node_modules/react-icons/fa';
+import { FaBars, FaSearch, FaBell, FaGlobe, FaAngleDown } from 'react-icons/fa';
 
 import './_header.css';
 
@@ -11,7 +11,7 @@ class Header extends Component {
             <div className="header">
                 <div className="leftcont">
                     <span className="bars-icon"><FaBars /></span>
-                    <span><img src="../../../public/images/logo.png" alt=""/></span>
+                    <span><img src="/images/logo.png" alt=""/></span>
                     <span className="title">LOGO</span>
                 </div>
                 <div className="rightcont">
